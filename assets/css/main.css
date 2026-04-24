@@ -250,25 +250,19 @@ body {
 .mr-logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
   color: #fff;
-  font-weight: 900;
-  font-size: 15px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  line-height: 0;
 }
-.mr-logo .mr-logo-mark {
-  width: 34px; height: 34px;
-  display: inline-flex; align-items: center; justify-content: center;
-  background: var(--mr-red);
-  color: #fff;
-  font-weight: 900;
-  border-radius: 999px;
-  font-size: 14px;
-  letter-spacing: 0;
-  box-shadow: 0 0 0 2px rgba(227,6,19,.25);
-}
+.mr-logo img,
+.mr-logo svg { display: block; height: 40px; width: auto; }
+.mr-logo--sm img,
+.mr-logo--sm svg { height: 32px; }
+.mr-logo--lg img,
+.mr-logo--lg svg { height: 56px; }
+.mr-logo-mark { display: inline-flex; align-items: center; justify-content: center; }
+.mr-logo-mark img,
+.mr-logo-mark svg { display: block; height: 38px; width: auto; }
 .mr-nav-links {
   display: flex; align-items: center; gap: 32px;
 }

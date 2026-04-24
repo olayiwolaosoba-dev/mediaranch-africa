@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="MediaRanch Africa mark">
+  <!-- Magnifying glass handle (behind the circle) -->
+  <rect x="14" y="96" width="34" height="12" rx="2" transform="rotate(-45 31 102)" fill="#111" />
+  <!-- White disc -->
+  <circle cx="60" cy="60" r="54" fill="#ffffff" />
+  <!-- Geometric M composed of four color segments -->
+  <!-- Left upright (cyan) -->
+  <polygon points="28,34 42,34 42,90 28,90" fill="#2BB6D6" />
+  <!-- Left diagonal (orange) -->
+  <polygon points="42,34 60,34 60,72 48,72" fill="#F39323" />
+  <!-- Right diagonal (red) -->
+  <polygon points="60,34 78,34 72,72 60,72" fill="#E30613" />
+  <!-- Right upright (purple) -->
+  <polygon points="78,34 92,34 92,90 78,90" fill="#6A2E8A" />
+  <!-- Center V notch to form M silhouette -->
+  <polygon points="48,72 60,90 72,72 60,72" fill="#ffffff" />
+</svg>
