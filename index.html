@@ -9,13 +9,15 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/main.css" />
+
+<style>/* critical – prevents logo flash before stylesheet */.mr-logo img{display:block;height:40px;max-height:40px;width:auto}.mr-logo.mr-logo--lg img{height:56px;max-height:56px}.mr-loader-logo img{height:42px;max-height:42px;width:auto}</style>
 </head>
 <body>
 
 <!-- Loader -->
 <div class="mr-loader">
   <div class="mr-loader-logo">
-    <img src="assets/img/logo-mark.png" alt="" style="height:42px;width:auto;display:block;" />
+    <img src="assets/img/logo-loader.png" alt="" width="35" height="42" style="display:block;" />
     <span>MediaRanch Africa</span>
   </div>
   <div class="mr-loader-bar"></div>
@@ -25,7 +27,7 @@
 <nav class="mr-nav">
   <div class="mr-container mr-nav-inner">
     <a href="index.html" class="mr-logo" aria-label="MediaRanch Africa">
-      <img src="assets/img/logo-full-light.png" alt="MediaRanch Africa" />
+      <img src="assets/img/logo-nav.png" alt="MediaRanch Africa" width="104" height="40" />
     </a>
     <div class="mr-nav-links">
       <a href="index.html" class="is-active">Home</a>
@@ -412,7 +414,7 @@
     <div class="mr-footer-grid">
       <div>
         <a href="index.html" class="mr-logo mr-logo--lg" aria-label="MediaRanch Africa" style="margin-bottom:24px;">
-          <img src="assets/img/logo-full-light.png" alt="MediaRanch Africa" />
+          <img src="assets/img/logo-footer.png" alt="MediaRanch Africa" width="146" height="56" />
         </a>
         <p style="margin-top:22px;color:var(--mr-on-surface-variant);font-size:14px;max-width:32ch;">
           Premier authority in digital video production. Cinematic, high-impact, professional.
