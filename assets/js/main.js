@@ -213,4 +213,43 @@
     });
   });
 
+  /* ---------- Video Lightbox Modal (Approach 1) ---------- */
+  const modal = document.getElementById('video-modal');
+  const modalTriggers = document.querySelectorAll('.js-video-trigger');
+  const modalCloseBtn = document.querySelector('.mr-video-modal-close');
+  const modalBackdrop = document.querySelector('.mr-video-modal-backdrop');
+  const modalPlaceholder = document.getElementById('modal-video-placeholder');
+
+  if (modal && modalTriggers.length) {
+    const openVideo = (e) => {
+      e.preventDefault();
+      // Read the video id from the tile that was actually clicked.
+      const videoId = e.currentTarget.getAttribute('data-video-id');
+      if (!videoId) return;
+      modalPlaceholder.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&enablejsapi=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+      modal.classList.add('is-active');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeVideo = () => {
+      modal.classList.remove('is-active');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      setTimeout(() => {
+        modalPlaceholder.innerHTML = '';
+      }, 500); // Clears the video once the fade-out completes
+    };
+
+    modalTriggers.forEach(trigger => trigger.addEventListener('click', openVideo));
+    modalCloseBtn.addEventListener('click', closeVideo);
+    modalBackdrop.addEventListener('click', closeVideo);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('is-active')) {
+        closeVideo();
+      }
+    });
+  }
+
 })();
