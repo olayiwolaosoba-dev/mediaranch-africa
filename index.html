@@ -93,7 +93,7 @@
     </p>
 
     <div class="mr-reveal" style="margin-top:40px;display:flex;gap:14px;flex-wrap:wrap;">
-      <a href="work.html" class="mr-btn mr-btn-primary">
+      <a href="https://youtu.be/BGqB4R429ek" class="mr-btn mr-btn-primary js-video-trigger" data-video-id="BGqB4R429ek">
         View Showreel
         <svg class="mr-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </a>
@@ -219,36 +219,36 @@
     </div>
 
     <div class="mr-work-grid">
-      <a class="mr-work-tile span-8" href="work.html">
-        <img src="https://images.unsplash.com/photo-1489493887464-892be6d1daae?q=80&w=2400&auto=format&fit=crop" alt="Silent Echo" />
+      <a class="mr-work-tile span-8 js-video-trigger" href="https://youtu.be/T1CX5fHsP7M" data-video-id="T1CX5fHsP7M">
+        <img src="https://img.youtube.com/vi/T1CX5fHsP7M/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/T1CX5fHsP7M/hqdefault.jpg'" alt="Futuretech Entry Video" />
         <div class="mr-work-tile-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
         <div class="mr-work-tile-body">
           <div class="mr-work-tile-tags"><span>Documentary</span><span>Color Grade</span></div>
-          <h3>The Silent Echo</h3>
+          <h3>Futuretech Entry Video</h3>
         </div>
       </a>
-      <a class="mr-work-tile span-4" href="work.html">
-        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1600&auto=format&fit=crop" alt="Urban Pulse" />
+      <a class="mr-work-tile span-4 js-video-trigger" href="https://youtu.be/9Ce0bpJIXpc" data-video-id="9Ce0bpJIXpc">
+        <img src="https://img.youtube.com/vi/9Ce0bpJIXpc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/9Ce0bpJIXpc/hqdefault.jpg'" alt="Coke Studio: Fire & Sand" />
         <div class="mr-work-tile-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
         <div class="mr-work-tile-body">
-          <div class="mr-work-tile-tags"><span>TVC</span></div>
-          <h3>Urban Pulse</h3>
+          <div class="mr-work-tile-tags"><span>TVC</span><span>Music</span></div>
+          <h3>Coke Studio: Fire &amp; Sand</h3>
         </div>
       </a>
-      <a class="mr-work-tile span-4" href="work.html">
-        <img src="https://images.unsplash.com/photo-1633613286991-611fe299c4be?q=80&w=1600&auto=format&fit=crop" alt="Digital Frontiers" />
+      <a class="mr-work-tile span-4 js-video-trigger" href="https://youtu.be/hiaZB5tAXY0" data-video-id="hiaZB5tAXY0">
+        <img src="https://img.youtube.com/vi/hiaZB5tAXY0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/hiaZB5tAXY0/hqdefault.jpg'" alt="Rainoil @ 25" />
         <div class="mr-work-tile-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
         <div class="mr-work-tile-body">
           <div class="mr-work-tile-tags"><span>3D Motion</span></div>
-          <h3>Digital Frontiers</h3>
+          <h3>Rainoil @ 25</h3>
         </div>
       </a>
-      <a class="mr-work-tile span-8" href="work.html">
-        <img src="https://images.unsplash.com/photo-1604514628550-37477afdf4e3?q=80&w=2400&auto=format&fit=crop" alt="Shadow &amp; Light" />
+      <a class="mr-work-tile span-8 js-video-trigger" href="https://youtu.be/YLv9KE4xlug" data-video-id="YLv9KE4xlug">
+        <img src="https://img.youtube.com/vi/YLv9KE4xlug/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/YLv9KE4xlug/hqdefault.jpg'" alt="HP LaserJet Tank Printer Launch" />
         <div class="mr-work-tile-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
         <div class="mr-work-tile-body">
-          <div class="mr-work-tile-tags"><span>Photography</span><span>Editorial</span></div>
-          <h3>Shadow &amp; Light</h3>
+          <div class="mr-work-tile-tags"><span>TVC</span><span>Launch</span></div>
+          <h3>HP LaserJet Tank Printer Launch</h3>
         </div>
       </a>
     </div>
@@ -474,6 +474,21 @@
   </div>
   <div class="mr-footer-mega">MEDIARANCH</div>
 </footer>
+
+<!-- Video Modal Overlay (Approach 1) -->
+<div id="video-modal" class="mr-video-modal" aria-hidden="true">
+  <div class="mr-video-modal-backdrop"></div>
+  <div class="mr-video-modal-container">
+    <button class="mr-video-modal-close" aria-label="Close video">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <div class="mr-video-modal-ratio">
+      <div id="modal-video-placeholder"></div>
+    </div>
+  </div>
+</div>
 
 <script src="assets/js/main.js"></script>
 </body>
