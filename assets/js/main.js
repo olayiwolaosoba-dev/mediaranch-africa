@@ -226,7 +226,7 @@
       // Read the video id from the tile that was actually clicked.
       const videoId = e.currentTarget.getAttribute('data-video-id');
       if (!videoId) return;
-      modalPlaceholder.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&enablejsapi=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+      modalPlaceholder.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=1&playsinline=1&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
       modal.classList.add('is-active');
       modal.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
