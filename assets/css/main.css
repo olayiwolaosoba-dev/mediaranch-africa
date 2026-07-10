@@ -758,6 +758,8 @@ body {
   min-height: 300px;
   display: flex; flex-direction: column; justify-content: space-between;
   transition: border-color .3s, background .3s;
+  text-decoration: none;
+  color: inherit;
 }
 .mr-service-tile:hover { border-color: var(--mr-red); background: #131313; }
 .mr-service-tile.is-media { padding: 0; background: #000; }
