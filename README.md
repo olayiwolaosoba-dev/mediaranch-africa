@@ -2,7 +2,7 @@
 
 A world-class, cinematic marketing site for **MediaRanch Africa**, a premier Lagos-based video production studio (est. 2012). Built for review and deployment.
 
-> If content is king, then video is the throne.
+> If content is king, then video is the throne and we are the king makers.
 
 ## ✶ What's inside
 
